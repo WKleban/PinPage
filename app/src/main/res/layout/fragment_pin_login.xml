@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PinLoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/pinfragment_tries_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Pozostało prób: 3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_button_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pin_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_2"
+        app:layout_constraintEnd_toStartOf="@+id/pin_button_2"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pin_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_button_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pin_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_2"
+        app:layout_constraintStart_toEndOf="@+id/pin_button_2"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_2" />
+
+    <Button
+        android:id="@+id/pin_button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_5"
+        app:layout_constraintEnd_toStartOf="@+id/pin_button_5"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_5" />
+
+    <Button
+        android:id="@+id/pin_button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_button_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pin_button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_5"
+        app:layout_constraintStart_toEndOf="@+id/pin_button_5"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_5" />
+
+    <Button
+        android:id="@+id/pin_button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_8"
+        app:layout_constraintEnd_toStartOf="@+id/pin_button_8"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_8" />
+
+    <Button
+        android:id="@+id/pin_button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin_button_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pin_button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_8"
+        app:layout_constraintStart_toEndOf="@+id/pin_button_8"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_8" />
+
+
+    <Button
+        android:id="@+id/pin_button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/pin_button_backspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:src="@drawable/ic_backspace_black_24dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_0"
+        app:layout_constraintStart_toEndOf="@+id/pin_button_8"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_0" />
+
+    <ImageButton
+        android:id="@+id/pin_button_reorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_green"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_button_0"
+        app:layout_constraintEnd_toStartOf="@+id/pin_button_0"
+        app:layout_constraintTop_toTopOf="@+id/pin_button_0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pinfragment_tries_left_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/pin_dot_1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_4"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_5"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_6"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_7"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_8"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_9"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_10"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_11"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/pin_dot_12"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_green"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/pin_blankdot"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="pl.wotu.pinpage.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_pinLoginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/registerFragment"
+            app:destination="@id/pinLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinLoginFragment"
+        android:name="pl.wotu.pinpage.PinLoginFragment"
+        android:label="fragment_pin_login"
+        tools:layout="@layout/fragment_pin_login" />
+</navigation>
